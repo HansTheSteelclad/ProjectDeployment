@@ -55,9 +55,8 @@ ROOT_URLCONF = 'Deployment_version.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
-        'APP_DIRS': True,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Main templates directory
+        'APP_DIRS': True,  # Enable app-specific template discovery
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
